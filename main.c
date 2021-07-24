@@ -42,6 +42,7 @@
 */
 
 #include "mcc_generated_files/mcc.h"
+#include "tcp_server_demo.h"
 
 /*
                          Main application
@@ -71,6 +72,8 @@ void main(void)
     {
         // Add your application code
         Network_Manage();
+        
+        DEMO_TCP_EchoServer();
     }
 }
 /**
